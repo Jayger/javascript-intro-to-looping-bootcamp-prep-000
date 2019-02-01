@@ -24,7 +24,6 @@ function doWhile(array) {
   }
   do {
     array.shift();
-    incrementVariable();
-  } while (array.length > 0 && incrementVariable() === false);
+  } while (array.length > 0 && incrementVariable());
   return array;
 }
