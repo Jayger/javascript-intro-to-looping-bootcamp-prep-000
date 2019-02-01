@@ -18,12 +18,13 @@ function whileLoop(num){
   return 'done';
 }
 
-function doWhile(array) {
-  function incrementVariable(){
+function incrementVariable(){
     i = i + 1;
   }
+  
+function doWhile(array) {
   do {
     array.shift();
-  } while (array.length > 0 && incrementVariable());
+  } while (array.length > 0 || incrementVariable());
   return array;
 }
